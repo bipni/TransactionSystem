@@ -14,7 +14,7 @@ public class V_UserStatus extends JFrame {
 	V_UserStatus() {
 		
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setTitle("User Registratio");
+		setTitle("User Registration");
 		setSize(500,500);
 		setLocationRelativeTo(null);
 		setResizable(false);
