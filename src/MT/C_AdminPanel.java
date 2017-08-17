@@ -8,7 +8,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
 
 public class C_AdminPanel {
-
+	
 	V_AdminPanel v_AdminPanel;
 	V_UserRegistration v_UserRegistration;
 	V_UserStatus v_UserStatus;
@@ -24,7 +24,7 @@ public class C_AdminPanel {
 		v_AdminPanel.userDeleteListener(new UserDelete());
 		v_AdminPanel.exitListener(new exit());
 	}
-	
+
 	class UserRegistration implements MouseListener {
 
 		@Override
@@ -64,9 +64,11 @@ public class C_AdminPanel {
 	}
 	
 	class UserStatus implements MouseListener {
-
+		
 		@Override
 		public void mouseClicked(MouseEvent e) {
+			
+			M_UserStatus m_UserStatus = new M_UserStatus();
 			
 			v_UserStatus.setVisible(true);
 			v_AdminPanel.setVisible(false);			
